@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded',function(event){
     // array with texts to type in typewriter
-    var dataText = [ "AI Skunkworks"];
+    var dataText = [ "Research and Develop Artificial Intelligence", "Machine Learning & Deep Learning projects", "For Innovation and Learning"];
     
     // type one text in the typwriter
     // keeps calling itself until the text is finished
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded',function(event){
         // wait for a while and call this function again for next character
         setTimeout(function() {
           typeWriter(text, i + 1, fnCallback)
-        }, 300);
+        },  100);
       }
       // text finished, call callback if there is a callback function
       else if (typeof fnCallback == 'function') {
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded',function(event){
        if (typeof dataText[i] == 'undefined'){
           setTimeout(function() {
             StartTextAnimation(0);
-          }, 20000);
+          }, 100);
        }
        // check if dataText[i] exists
       if (i < dataText[i].length) {
