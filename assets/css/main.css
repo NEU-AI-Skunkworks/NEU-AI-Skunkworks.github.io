@@ -83,6 +83,14 @@ input, select, textarea {
 .big-font{
 	font-size: 300px;
 }
+
+.proposal {
+	margin-bottom: 4%;
+}
+
+.proposal-title {
+	color: #e76278;
+}
 /* Basic */
 
 	html {
